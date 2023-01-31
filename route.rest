@@ -1,0 +1,58 @@
+GET http://localhost:3000/unicorns
+
+###
+
+GET http://localhost:3000/unicorns/63d877cb0b5d793348aa4a66
+
+### 
+
+POST http://localhost:3000/unicorns
+Content-Type: application/json
+
+{
+  "name": "Puff",
+  "fur": "pink",
+  "hornLength": 5,
+  "isBaby": true,
+  "owner": "Andy"
+}
+
+###
+
+DELETE http://localhost:3000/unicorns/63d877cb0b5d793348aa4a66
+
+###
+
+PATCH  http://localhost:3000/unicorns/63d8ba9c6b8a02e2f035b9ff
+Content-Type: application/json
+
+{
+    "name": "test_name_update"
+}
+
+###
+
+POST http://localhost:3000/rideLogs
+Content-Type: application/json
+
+{
+  "user": "Jiro",
+  "unicorn": "Big Drip J",
+  "duration": 15
+}
+
+###
+
+GET http://localhost:3000/rideLogs
+
+###
+
+DELETE http://localhost:3000/rideLogs/63d8bb686b8a02e2f035ba10
+
+###
+
+GET http://localhost:3000/longest-rider?name=Brother
+
+###
+
+GET http://localhost:3000/unicorns?fur=blue
