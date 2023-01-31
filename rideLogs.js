@@ -40,7 +40,8 @@ router.post('/', async (req, res) => {
 
           if (err) throw err;
           console.log(res.result.nModified + " document(s) updated");
-          db.close();
+          //accidentally forgot to delete the line below
+          //db.close();
         })
         res.json(prev)
        }
